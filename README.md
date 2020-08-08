@@ -30,8 +30,8 @@ python 3.7 / windows 10 / tensorflow gpu 2.0 / Ram 32gb / GTX 1050 Ti
 ## Library
 
 ## References
-https://github.com/Ikaroshu/movie_recommendation_engine/blob/master/Denoising_Autoencoder.ipynb
-https://arena.kakao.com/forum/topics/191
+* https://github.com/Ikaroshu/movie_recommendation_engine/blob/master/Denoising_Autoencoder.ipynb
+* https://arena.kakao.com/forum/topics/191
 
 ## 넣어야 할 것들
 사용 예제, 개발 환경 설정 방법, 기여 방법, 변경 로그, 라이센스 및 작성자 정보
