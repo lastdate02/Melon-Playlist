@@ -22,10 +22,10 @@
 * 발매일
 
 ## Environmnent
-python 3.7 / windows 10 / tensorflow gpu 2.0 / Ram 32gb / GTX 1050 Ti
+Python 3.7 / Windows 10 / / RAM 32gb / GTX 1050 Ti
 
 ## Library
-* Tensorflow
+* Tensorflow gpu 2.0 
 
 ## Model
 * Autoencoder
