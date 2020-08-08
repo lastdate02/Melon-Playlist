@@ -24,10 +24,11 @@
 ## Environmnent
 python 3.7 / windows 10 / tensorflow gpu 2.0 / Ram 32gb / GTX 1050 Ti
 
+## Library
+* Tensorflow
+
 ## Model
 * Autoencoder
-
-## Library
 
 ## References
 * https://github.com/Ikaroshu/movie_recommendation_engine/blob/master/Denoising_Autoencoder.ipynb
