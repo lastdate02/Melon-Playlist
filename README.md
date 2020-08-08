@@ -1,46 +1,37 @@
 # melon-playlist
-멜론 플레이리스트 예측 모델
+* 목표 : 플레이리스트에 수록된 곡과 태그의 절반 또는 전부가 숨겨져 있을 때 주어지지 않은 곡들과 태그를 예측
+* 기대 효과 : 예측 모델을 만든다면, 플레이리스트에 들어있는 곡이 주어졌을 때 이 모델이 해당 플레이리스트와 어울리는 곡들을 추천
 
 ## 프로젝트 소개
-* 대회 정보 : https://dacon.io/competitions/official/235583/overview/
-* 데이터 출처 : https://github.com/Blizzard/s2client-proto#downloads
-* 대회에서 제공하는 데이터는 게임 플레이어의 행동 정보를 담고 있습니다. 이 데이터를 사용하여 게임에서 승리하는 선수를 예측합니다. 데이터는 5만여 개의 경기 리플레이 데이터로 이루어져 있으며, 각 리플레이 데이터는 총 경기 시간의 일부에 대한 인게임 정보를 포함합니다.
+* 대회 정보 : https://arena.kakao.com/c/7
+* 데이터 출처 : https://arena.kakao.com/c/7/data
+* 대회에서 제공하는 데이터는 멜론 서비스에서 수집된 플레이리스트의 일부분입니다.
 
 ## Data
-### train.csv / test.csv
-* game_id : 경기 구분 기호
-* winner : player 1의 승리 확률
-* time : 경기 시간, 마침표(.)로 분과 초가 구분됩니다. ex) 2.24 = 2분 24초
-* player : 선수
-    - 0: player 0
-    - 1: player 1
-* species : 종족
-    - T: 테란
-    - P: 프로토스
-    - Z: 저그
-* event : 행동 종류
-* event_contents : 행동 상세
-    - Ability : 생산, 공격 등 선수의 주요 행동
-    - AddToControlGroup : 부대에 추가
-    - Camera : 시점 선택
-    - ControlGroup : 부대 행동
-    - GetControlGroup : 부대 불러오기
-    - Right Click : 마우스 우클릭
-    - Selection : 객체 선택
-    - SetControlGroup : 부대 지정
-### sample_submission.csv
-* game_id : 경기 구분 기호
-* winner : player 1의 승리 확률
+### 플레이리스트 메타데이터(train, val)
+* 플레이리스트 제목
+* 플레이리스트에 수록된 곡
+* 플레이리스트에 달려있는 태그 목록
+* 플레이리스트 좋아요 수
+* 플레이리스트가 최종 수정된 시각
+### 곡 메타데이터(song_meta)
+* 곡 제목
+* 앨범 제목
+* 아티스트명
+* 장르
+* 발매일
 
 ## Environmnent
-python 3.7 / windows 10 / ram 8gb / i5-8300h / gtx 1050
+python 3.7 / windows 10 / tensorflow gpu 2.0 / Ram 32gb / GTX 1050 Ti
 
+## Model
+* Autoencoder
 
 ## Library
 
 ## References
-https://sujinlee.me/professional-github/
-https://www.bigcontest.or.kr/points/content.php#ct02
+https://github.com/Ikaroshu/movie_recommendation_engine/blob/master/Denoising_Autoencoder.ipynb
+https://arena.kakao.com/forum/topics/191
 
 ## 넣어야 할 것들
 사용 예제, 개발 환경 설정 방법, 기여 방법, 변경 로그, 라이센스 및 작성자 정보
