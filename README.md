@@ -1,4 +1,4 @@
-# melon-playlist
+# Melon-Playlist
 * 목표 : 플레이리스트에 수록된 곡과 태그의 절반 또는 전부가 숨겨져 있을 때 주어지지 않은 곡들과 태그를 예측
 * 기대 효과 : 예측 모델을 만든다면, 플레이리스트에 들어있는 곡이 주어졌을 때 이 모델이 해당 플레이리스트와 어울리는 곡들을 추천
 
@@ -33,6 +33,3 @@ Python 3.7 / Windows 10 / / RAM 32gb / GTX 1050 Ti
 ## References
 * https://github.com/Ikaroshu/movie_recommendation_engine/blob/master/Denoising_Autoencoder.ipynb
 * https://arena.kakao.com/forum/topics/191
-
-## 넣어야 할 것들
-사용 예제, 개발 환경 설정 방법, 기여 방법, 변경 로그, 라이센스 및 작성자 정보
